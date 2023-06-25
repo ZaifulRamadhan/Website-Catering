@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Kelompok_A2_Galeri.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <img src="gambar/logo.png" alt="Logo">
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="Kelompok_A2_Home.html" class="active">Home</a></li>
+                    <li><a href="Kelompok_A2_Galeri.html">About</a></li>
+                    <li><a href="Kelompok_A2_Kontak.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="gambar/1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="gambar/2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="gambar/3.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="rounded">
+        <h3>Keunggulan Catering Kami</h3>
+        <img src="gambar/halal_.png" alt="Halal" class="halal">
+        <img src="gambar/freedelivery_.png" alt="Delivery" class="deliveri">
+        <img src="gambar/freerecipe_.png" alt="Resep" class="resep">
+        <img src="gambar/personalizedmenu_.png" alt="Menu" class="menu">
+        <!--Content Keunggulan-->
+        <div class="content-rounded">
+            <p class="paragraf-halal">Pastinya makanan kami halal</p>
+            <p class="paragraf-deliveri">Pengantaran dilakukan 3 kali setiap harinya untuk menjaga mutu dan kualitas
+                makanan
+            </p>
+            <p class="paragraf-resep">Dapatkan resep menu favorit Anda secara gratis!</p>
+            <p class="paragraf-menu">Menu dirancang sesuai kebutuhan gizi dan selera makan</p>
+        </div>
+    </div>
+
+    <!--Header Galeri-->
+    <div class="header">
+        <h1>Galeri Kami</h1>
+    </div>
+
+    <!--Photo Grid-->
+    <div class="row">
+        <div class="column">
+            <img src="gambar/photo grid 1.jpg" style="width:49%">
+            <img src="gambar/photo grid 2.jpg" style="width:49%">
+            <img src="gambar/photo grid 3.jpg" style="width:49%">
+            <img src="gambar/photo grid 4.jpg" style="width:49%">
+            <img src="gambar/photo grid 5.jpg" style="width:49%">
+            <img src="gambar/photo grid 6.jpg" style="width:49%">
+        </div>
+        <div class="column">
+            <img src="gambar/photo grid 8.jpg" style="width:49%">
+            <img src="gambar/photo grid 9.jpg" style="width:49%">
+            <img src="gambar/photo grid 10.jpg" style="width:49%">
+            <img src="gambar/photo grid 11.jpg" style="width:49%">
+            <img src="gambar/photo grid 12.jpg" style="width:49%">
+            <img src="gambar/photo grid 13.jpg" style="width:49%">
+        </div>
+    </div>
+
+    <!--Our Misi-->
+    <div class="ourMisi">
+        <div class="background">
+            <img src="gambar/img our misi.jpg" alt="Gambar Misi">
+            <h2>Misi Kami</h2>
+            <i>"Pemilihan bahan-bahan makanan yang higienis dan kualitas makanan yang bermutu dengan citarasa tinggi
+                serta
+                pelayanan yang maksimal adalah prinsip yang senantiasa kami pegang teguh.
+                Melalui jasa layanan profesional dalam perencanaan dan penyediaan makanan serta pembiasaan pola makan
+                sehat bagi
+                pelanggan khususnya dan masyarakat pada umumnya."</i>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>TugasBesar &copy; Catering</p>
+    </footer>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

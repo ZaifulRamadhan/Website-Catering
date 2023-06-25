@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pesanan</title>
+    <link rel="stylesheet" href="Kelompok_A2_Pesanan.css">
+</head>
+
+<body>
+
+    <!--Navbar Menu-->
+    <div id="navbar">
+        <img src="gambar/logo.png" alt="Logo">
+        <div id="main">
+            <nav>
+                <ul>
+                    <li><a href="Kelompok_A2_Home.html" class="active">Home</a></li>
+                    <li><a href="Kelompok_A2_Galeri.html">About</a></li>
+                    <li><a href="Kelompok_A2_Kontak.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--Header "ORDER"-->
+    <div class="content">
+        <span>
+            <h1>Pesan Catering</h1>
+            <h4>Rasa Sekarang Masakan Catering Kami</h4>
+        </span>
+    </div>
+
+
+    <!--Card Untuk Pesan Catering "ORDER" -->
+    <div class="flip-card" style="float: left; width: 30%;">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="flip-1" src="gambar/flip 1.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Rumahan</h1>
+                <p>Kami juga menerima permintaan catering harian rumahan, kantoran dan sekolah dengan beraneka menu
+                    setiap
+                    harinya.</p>
+                <li><a href="https://wa.me/6282277593674?text=Saya Ingin Memesan Catering">Pesan</a></li>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class=" flip-card" style="float: left; width: 30%;">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="flip-1" src="gambar/flip 2.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Prasmanan</h1>
+                <p>Kami siap melayani pesanan catering prasmanan untuk berbagai acara atau event Anda.</p>
+                <li><a href="https://wa.me/6282277593674?text=Saya Ingin Memesan Catering">Pesan</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card" style="float: left; width: 30%;">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="flip-1" src="gambar/flip 3.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Nasi Kotak</h1>
+                <p>Kami menerima pemesanan nasi kotak atau Nasi box dengan berbagai menu sesuai dengan permintaan anda.
+                </p>
+                <li><a href="https://wa.me/6282277593674?text=Saya Ingin Memesan Catering">Pesan</a></li>
+            </div>
+        </div>
+    </div>
+
+    <!--Daftar Menu-->
+    <div class="img-menu">
+        <img src="gambar/menu1.png" alt="Daftar Menu" style="width: 100%;">
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>TugasBesar &copy; Catering</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function pesanan(elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

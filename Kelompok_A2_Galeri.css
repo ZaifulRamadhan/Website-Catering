@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar img {
+  width: 95px;
+  float: left;
+  padding: 7px 0 0 25px;
+}
+
+#main nav ul {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#main nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 50px;
+}
+
+#main nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 6px 13px;
+  transition: 0.4s all ease-out;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#main nav ul li a.active,
+#main nav ul li a:hover {
+  background: #fd4a47;
+  color: #fff;
+  transition: 0.4s all ease-out;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+  border-radius: 2%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rounded {
+  padding: 100px 15%;
+}
+
+.rounded h3 {
+  font-size: 25px;
+  color: #5b5a5a;
+}
+
+.rounded h3::before {
+  content: "";
+  height: 2px;
+  width: 69vw;
+  position: absolute;
+  background-color: #717171;
+}
+
+.rounded .halal {
+  width: 12%;
+  margin-left: 3vw;
+}
+
+.rounded .deliveri {
+  padding-left: 8vw;
+}
+
+.rounded .resep {
+  padding-left: 8vw;
+}
+
+.rounded .menu {
+  padding-left: 8vw;
+}
+
+.content-rounded p {
+  font-size: 15px;
+  text-align: center;
+  color: #717171;
+  font-family: 'Arial';
+}
+
+.content-rounded .paragraf-halal {
+  width: 15vw;
+  float: left;
+}
+
+.content-rounded .paragraf-deliveri {
+  width: 15vw;
+  margin-left: 23px;
+  float: left;
+}
+
+.content-rounded .paragraf-resep {
+  width: 15vw;
+  margin-left: 37px;
+  float: left;
+}
+
+.content-rounded .paragraf-menu {
+  width: 15vw;
+  margin-left: 37px;
+  float: left;
+}
+
+/*Bagian Foto Galeri*/
+.header {
+  text-align: center;
+  padding-top: 30px;
+  color: #5b5a5a;
+  font-size: 15px;
+}
+
+.background {
+  background-color: #fd4a47;
+  padding: 30px 40px 150px 60px;
+  color: #fff;
+}
+
+.ourMisi img {
+  width: 400px;
+  float: right;
+  border-radius: 2%;
+  height: 270px;
+  padding-right: 100px;
+}
+
+.ourMisi h2 {
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+/*footer*/
+
+footer p {
+  text-align: center;
+  padding: 30px;
+  background-color: #ddd;
+}
